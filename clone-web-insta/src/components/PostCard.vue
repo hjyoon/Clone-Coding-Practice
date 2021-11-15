@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <b-row class="justify-content-md-center">
     <b-card
       :title="item.title"
       :img-src="item.image_url"
@@ -14,7 +14,7 @@
       </b-card-text>
       <b-button href="#" variant="primary">Button</b-button>
     </b-card>
-  </div>
+  </b-row>
 </template>
 
 <script>

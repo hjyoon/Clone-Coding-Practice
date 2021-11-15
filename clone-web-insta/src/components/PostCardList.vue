@@ -1,6 +1,8 @@
 <template>
   <div>
-    <post-card v-for="item in items" :key="item.id" :item="item"></post-card>
+    <b-container>
+      <post-card v-for="item in items" :key="item.id" :item="item"></post-card>
+    </b-container>
   </div>
 </template>
 
