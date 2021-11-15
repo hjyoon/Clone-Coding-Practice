@@ -1,5 +1,5 @@
 <template>
-  <b-navbar toggleable="lg" type="dark" variant="info">
+  <b-navbar toggleable="lg" type="dark" variant="info" sticky>
     <b-container>
       <router-link to="/" custom v-slot="{ navigate, href }">
         <b-navbar-brand @click="navigate" :href="href"
