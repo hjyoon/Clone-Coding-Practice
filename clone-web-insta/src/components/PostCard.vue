@@ -1,5 +1,5 @@
 <template>
-  <b-row class="justify-content-md-center">
+  <b-row class="justify-content-center">
     <b-card
       :title="item.title"
       :img-src="item.image_url"
