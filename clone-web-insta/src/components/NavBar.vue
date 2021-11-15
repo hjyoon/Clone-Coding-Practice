@@ -10,12 +10,7 @@
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav>
-          <router-link to="/about" custom v-slot="{ navigate }">
-            <b-nav-item @click="navigate">About</b-nav-item>
-          </router-link>
-          <b-nav-item to="#" disabled>Disabled</b-nav-item>
-        </b-navbar-nav>
+        <b-navbar-nav></b-navbar-nav>
 
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
