@@ -49,7 +49,9 @@
 export default {
   name: "NavBar",
   components: {},
-  data: function () {},
+  data: function () {
+    return {};
+  },
   methods: {},
 };
 </script>
