@@ -1,13 +1,19 @@
 <template>
   <b-navbar toggleable="lg" type="dark" variant="info">
     <b-container>
-      <b-navbar-brand to="/">Instagram</b-navbar-brand>
+      <router-link to="/" custom v-slot="{ navigate, href }">
+        <b-navbar-brand @click="navigate" :href="href"
+          >Instagram</b-navbar-brand
+        >
+      </router-link>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item to="/about">About</b-nav-item>
+          <router-link to="/about" custom v-slot="{ navigate }">
+            <b-nav-item @click="navigate">About</b-nav-item>
+          </router-link>
           <b-nav-item to="#" disabled>Disabled</b-nav-item>
         </b-navbar-nav>
 
